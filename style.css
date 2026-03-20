@@ -13,30 +13,30 @@ body {
   border-radius: 10px;
 }
 
-/* DISPLAY NOVO */
+/* DISPLAY */
 #display {
   width: 100%;
-  height: 60px;
+  height: 70px;
   margin-bottom: 15px;
 
   display: flex;
   align-items: center;
   justify-content: flex-end;
 
-  font-size: 28px;
+  font-size: 32px;
   padding: 10px;
   border-radius: 6px;
 
-  background: white;
-  color: black;
+  background-color: #ffffff !important; /* FORÇA branco */
+  color: #000000 !important;            /* FORÇA preto */
 
-  /* isso força aparecer corretamente */
-  overflow-x: auto;
+  border: 2px solid #000; /* ajuda a visualizar */
 }
 
+/* BOTÕES */
 .buttons {
   display: grid;
-  grid-template-columns: repeat(4, 65px);
+  grid-template-columns: repeat(4, 70px);
   gap: 10px;
 }
 
@@ -46,15 +46,16 @@ button {
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  background: #ddd;
-  color: black;
+
+  background: #e5e5e5;
+  color: #000;
 }
 
 button:hover {
-  background: #bbb;
+  background: #ccc;
 }
 
 button:last-child {
-  background: #4CAF50;
+  background: #28a745;
   color: white;
 }
