@@ -1,17 +1,21 @@
 let display = document.getElementById("display");
 
 function appendValue(value) {
-  display.value += value;
+  if (display.innerText === "0") {
+    display.innerText = value;
+  } else {
+    display.innerText += value;
+  }
 }
 
 function clearDisplay() {
-  display.value = "";
+  display.innerText = "0";
 }
 
 function calculate() {
   try {
-    display.value = eval(display.value);
+    display.innerText = eval(display.innerText);
   } catch {
-    display.value = "Erro";
+    display.innerText = "Erro";
   }
 }
