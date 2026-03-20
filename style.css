@@ -1,32 +1,37 @@
 body {
-  background: #1f2937;
+  background: #222;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  font-family: Arial, sans-serif;
+  font-family: Arial;
 }
 
 .calculator {
-  background: #111827;
+  background: #333;
   padding: 20px;
   border-radius: 10px;
 }
 
+/* DISPLAY NOVO */
 #display {
   width: 100%;
   height: 60px;
   margin-bottom: 15px;
-  font-size: 26px;
-  text-align: right;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  font-size: 28px;
   padding: 10px;
-  border: none;
   border-radius: 6px;
 
-  /* CORRIGIDO AQUI 👇 */
-  background: #f9fafb;   /* fundo claro */
-  color: #000000;        /* números pretos */
-  font-weight: bold;
+  background: white;
+  color: black;
+
+  /* isso força aparecer corretamente */
+  overflow-x: auto;
 }
 
 .buttons {
@@ -41,22 +46,15 @@ button {
   border: none;
   border-radius: 6px;
   cursor: pointer;
-
-  /* botões mais claros */
-  background: #e5e7eb;
-  color: #000;
+  background: #ddd;
+  color: black;
 }
 
 button:hover {
-  background: #d1d5db;
+  background: #bbb;
 }
 
-/* botão = */
 button:last-child {
-  background: #22c55e;
+  background: #4CAF50;
   color: white;
-}
-
-button:last-child:hover {
-  background: #16a34a;
 }
